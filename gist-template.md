@@ -1,6 +1,6 @@
 # Regex Tutorial: Mathcing an Email
 
-This is a tutorial to describe different parts of a regular expression or regex. A regular expression is a sequence of characters that define a search pattern and when included in code or search algorithms, they can be used to find certain patterns of characters within a string. They are also used to validate user inputs.
+The porpose of this tutorial is to describe the different parts that make up a regeular expression. Also known as regex. Regex is a sequence of characters that define a search pattern and when included in code or search algorithms, they can be used to find certain patterns of characters within a string. They are also used to validate user inputs.
 
 ## Summary
 
@@ -8,7 +8,7 @@ This tutorial will examine the regex below to search for an valid email address.
 
 ``/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/``
 
-The first part of the above regex expression uses an ^ to start the string. The expression, then, is broken into three separate parts:-
+The first part of the above regex expression uses an ^ to start the string. The expression, then, is broken into three parts:-
 
 Part 1: ([a-z0-9_\.-]+) – This part of the expression matches one or more lowercase letters between a-z, numbers between 0-9, underscores, periods, and hyphens. The expression is then followed by the @ sign.
 
