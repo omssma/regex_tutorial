@@ -8,7 +8,7 @@ This tutorial will examine the regex below to search for an valid email address.
 
 ``/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/``
 
-The first part of the above regex expression uses an ^ to start the string. The expression, then, is broken into three parts:-
+The first part of the above regex expression uses an ^ to start the string. The expression, then, is broken into three parts:- (See Grouping and Capturing)
 
 Part 1: ([a-z0-9_\.-]+) – This part of the expression matches one or more lowercase letters between a-z, numbers between 0-9, underscores, periods, and hyphens. The expression is then followed by the @ sign.
 
@@ -54,8 +54,7 @@ Flags are "optional parameters that we can add to a plain expression to make it
 search in a different way" (https://www.codeguage.com/courses/regexp/flags) by
 modifying the expressions behavior. Flags are indicated by a single alphabetic
 character and multiple flags can be used by writing them one after another.
-Flags used in email matching are: \*`(m)`: if enabled, matches the end of the line instead of the end of the string
-(indicated by '$'),
+Flags used in email matching are: g which stands for global search
 
 ### Grouping and Capturing
 
@@ -80,7 +79,7 @@ There are also variations of this regex which can be done by using a pair of wor
 
 ### Back-references
 
-Backreferences match the same text as previously matched by a capturing group.
+Backreferences match the same text as previously matched by a capturing group (Broken down into three parts/groups)
 
 ### Look-ahead and Look-behind
 
