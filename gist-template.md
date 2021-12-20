@@ -4,17 +4,17 @@ The porpose of this tutorial is to describe the different parts that make up a r
 
 ## Summary
 
-This tutorial will examine the regex below to search for an valid email address.
+This tutorial examines the regex below to search for an valid email address.
 
 ``/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/``
 
-The first part of the above regex expression uses an ^ to start the string. The expression, then, is broken into three parts:- (See Grouping and Capturing)
+The first part of the above regex expression uses a ^ to start the string. The expression, then, is broken into three parts:- (See Grouping and Capturing)
 
 Part 1: ([a-z0-9_\.-]+) – This part of the expression matches one or more lowercase letters between a-z, numbers between 0-9, underscores, periods, and hyphens. The expression is then followed by the @ sign.
 
 Part 2: ([\da-z\.-]+) – The domain name must be matched so it can use one or more digits, letters between a-z, periods, and hyphens. The domain name is then followed by a period \..
 
-Part 3: ([a-z\.]{2,6}) – The third part matches the top level domain. This section searches for any group of letters or dots that are 2-6 characters long. This can also account for region-specific top level domains.
+Part 3: ([a-z\.]{2,6}) – The third part matches the top level domain. This section searches for any group of letters or dots that are 2-6 characters long.
 
 ## Table of Contents
 
@@ -34,15 +34,15 @@ Part 3: ([a-z\.]{2,6}) – The third part matches the top level domain. This sec
 
 ### Anchors
 
-Examples of anchors in regex are the beginning of a string, signified by ``^`` and the end of a string signified by ``$``. 
+Anchors in regex are the beginning of a string, signified by ``^`` and the end of a string signified by ``$``. 
 
 ### Quantifiers
 
-Quantifiers indicate the number of characters or expressions to match. This regex has two quantifiers ``+`` and ``{}``. The ``+`` is looking for one or more of the expressions existing in ``[]``. The ``{2,6}`` which signifies between 2 and 6 instances of the character class ``[a-z\.]`` that comes before it.
+Quantifiers indicate the number of characters or expressions to match in a regex. This expression has two quantifiers ``+`` and ``{}``. The ``+`` is looking for one or more of the expressions existing in ``[]``. The ``{2,6}`` which signifies between 2 and 6 instances of the character class ``[a-z\.]`` that comes before it.
 
 ### OR Operator
 
-The pipe | is considered an alternation. It matches the expression that comes before or aftet it. This quantifier can also affect specific characters, or a whole expression.
+The pipe | is considered an alternation. It matches the expression that comes before or aftet it. It affects specific characters or the whole expression.
 
 ### Character Classes
 

@@ -1,4 +1,4 @@
-# 17 Computer Science for JavaScript: Regex Tutorial
+# Computer Science for JavaScript: Regex Tutorial
 
 Developers write code, but they also write *about* code. Take a moment to search the web for tutorials about any of the subjects you’ve learned so far in this course. You’re likely to find thousands of tutorials written by developers of all skill levels, but especially by junior developers&mdash;like you!
 
